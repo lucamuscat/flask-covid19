@@ -7,6 +7,7 @@
 - Add meta tags
 - Add icon
 - Asynchronously refresh the data according to a specified interval to prevent scraping from occuring on a request (which heavily slows down response time)
+- Handle non existant countries.
 
 ## Example images
 ![Example Image](images/image.png)
