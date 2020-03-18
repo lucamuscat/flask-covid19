@@ -14,7 +14,7 @@ def corona(country="Malta"):
     # Each label is represented by the index created by the enumeration.
     for index, value in enumerate(labels, start=1):
         text = data[index].text if data[index].text != "" else "None"
-        results[value] = text
+        results[value] = text.replace(",", "")
 
     return results
 

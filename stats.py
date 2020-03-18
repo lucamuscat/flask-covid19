@@ -6,9 +6,10 @@ from datetime import datetime
 
 
 class stats():
-    def __init__(self):
-        self.corona = corona()
-        self.population = population()
+    def __init__(self, country="Malta"):
+        self.country = country
+        self.corona = corona(self.country)
+        self.population = population(self.country)
         self.last_updated_epoch = time()
         self.last_updated_time = datetime.now().strftime(
             "%d-%m-%Y %H:%M:%S")
