@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>COVID-19 Malta</title>
+    <meta name="description" content="Real time Maltese Corona Virus Counter.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="row">
+            Total Cases: {{corona_data.get("total_cases")}}
+        </div>
+
+        <div class="row">
+            % infected population: {{percentage_infected}}
+        </div>
+
+        <div class="row">
+            New Cases: {{corona_data.get("new_cases")}}
+        </div>
+
+        <div class="row">
+            Total Deaths: {{corona_data.get("total_deaths")}}
+        </div>
+        <div class="row">
+            New Deaths: {{corona_data.get("new_deaths")}}
+        </div>
+    </div>
+</body>
+<div class="footer">
+    Last Refresh: {{last_updated}}
+</div>
+
+</html>
