@@ -5,6 +5,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#wrapper::selection {
+    background-color: black;
+    color: white;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -20,4 +25,37 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
+}
+
+#search {
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 25px;
+}
+
+#submit {
+    background-color: inherit;
+    width: 75px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#submit:not(:hover) {
+    background-color: inherit;
+    color: black;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
 }

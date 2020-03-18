@@ -19,7 +19,7 @@
         </div>
 
         <div class="row">
-            % infected population: {{percentage_infected}}
+            Population: {{population_data}}
         </div>
 
         <div class="row">
@@ -32,10 +32,31 @@
         <div class="row">
             New Deaths: {{corona_data.get("new_deaths")}}
         </div>
+        <div class="row">
+            <input id="search" class="search" type="text" placeholder="Search Country" />
+            <button id="submit" name="submit" autocomplete="off">Search</button>
+        </div>
     </div>
+    <div class="footer">
+        Last Refresh: {{last_updated}}
+    </div>
+
+    <script>
+        const button = document.getElementById("submit");
+        const input = document.getElementById("search")
+        const redirect = (country) => {
+            window.location.href = `/Country/${country}`
+        };
+        button.addEventListener("click", function () {
+            redirect(input.value)
+        });
+        input.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                redirect(input.value)
+            }
+        });
+    </script>
+
 </body>
-<div class="footer">
-    Last Refresh: {{last_updated}}
-</div>
 
 </html>

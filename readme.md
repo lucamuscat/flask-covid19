@@ -2,11 +2,11 @@
 
 ## TODO
 
-- Change infrastructure to hold and cache all the countries in the odometer
-- Add a search bar
+- DONE Change infrastructure to hold and cache all the countries in the odometer
+- DONE Add a search bar
 - Add meta tags
 - Add icon
-- Truncate infected population percentage to 4 D.P
+- Asynchronously refresh the data according to a specified interval to prevent scraping from occuring on a request (which heavily slows down response time)
 
 ## Example images
 ![Example Image](images/example.png)
