@@ -9,4 +9,4 @@
 - Asynchronously refresh the data according to a specified interval to prevent scraping from occuring on a request (which heavily slows down response time)
 
 ## Example images
-![Example Image](images/example.png)
+![Example Image](images/image.png)
