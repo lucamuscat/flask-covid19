@@ -9,4 +9,4 @@
 - Truncate infected population percentage to 4 D.P
 
 ## Example images
-![Example Image][images/example.png]
+![Example Image](images/example.png)
